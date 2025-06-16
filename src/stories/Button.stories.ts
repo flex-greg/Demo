@@ -18,11 +18,6 @@ const meta: Meta<typeof Button> = {
       control: "boolean",
       description: "Whether the button should have rounded corners",
     },
-    type: {
-      control: "select",
-      options: ["button", "submit", "reset"],
-      description: "The button type",
-    },
     children: {
       control: "text",
       description: "The button content",
@@ -80,7 +75,6 @@ export const LongText: Story = {
 export const Submit: Story = {
   args: {
     variant: "primary",
-    type: "submit",
     children: "Submit Form",
   },
 };
@@ -88,7 +82,6 @@ export const Submit: Story = {
 export const Reset: Story = {
   args: {
     variant: "secondary",
-    type: "reset",
     children: "Reset Form",
   },
 };
