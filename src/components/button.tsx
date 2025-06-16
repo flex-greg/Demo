@@ -1,3 +1,4 @@
+// src/components/button.tsx
 import { styled } from "@linaria/react";
 import { Button as AriaButton } from "react-aria-components";
 
@@ -9,7 +10,6 @@ interface ClickableParent {
 interface ButtonProps extends ClickableParent {
   variant?: "primary" | "secondary";
   rounded?: boolean;
-  type?: "button" | "submit" | "reset";
 }
 
 export const Button = styled(AriaButton)<ButtonProps>`

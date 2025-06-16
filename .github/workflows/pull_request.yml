@@ -1,0 +1,11 @@
+name: Pull Request
+
+on:
+  pull_request:
+    branches: [main]
+
+jobs:
+  lint_and_format:
+    uses: ./.github/workflows/biome.yml
+  commit_lint:
+    uses: ./.github/workflows/commit_lint.yml
