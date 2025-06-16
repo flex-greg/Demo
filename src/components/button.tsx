@@ -13,8 +13,7 @@ interface ButtonProps extends ClickableParent {
 }
 
 export const Button = styled(AriaButton)<ButtonProps>`
-  background-color: ${({ variant }) =>
-    variant === "primary" ? "red" : "blue"};
+  background-color: ${({ variant }) => (variant === "primary" ? "red" : "blue")};
   border-radius: ${({ rounded }) => (rounded ? "9999px" : "0")};
   padding: 0.5rem 1rem;
   border: none;

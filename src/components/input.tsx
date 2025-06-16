@@ -1,5 +1,5 @@
 import { styled } from "@linaria/react";
-import { TextField, Label, Input, Text } from "react-aria-components";
+import { Input, Label, Text, TextField } from "react-aria-components";
 
 interface TextInputProps {
   type: "text" | "password" | "email" | "number" | "tel" | "url" | "search";
